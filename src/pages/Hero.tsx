@@ -1,4 +1,4 @@
-
+import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
@@ -33,9 +33,9 @@ const Hero = () => {
           <a href="#" style={{ textDecoration: 'none', color: '#333' }}>Cart ()</a>
         </div>
 
-        <button style={{ backgroundColor: '#36a9e1', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '50px', cursor: 'pointer' }}>
+        <Button style={{ backgroundColor: '#36a9e1', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '50px', cursor: 'pointer' }}>
           Browse packages
-        </button>
+        </Button>
       </div>
 
       {/* Hero Content */}
@@ -48,12 +48,12 @@ const Hero = () => {
             Elementum orci vulputate pharetra lorem in feugiat pulvinar dolor accumsan nisi faucibus amet interdum nec nulla elementum sediam vulputate consectur dolor.
           </p>
           <div style={{ display: 'flex', gap: '20px' }}>
-            <button style={{ backgroundColor: '#36a9e1', color: 'white', padding: '12px 24px', border: 'none', borderRadius: '50px', cursor: 'pointer' }}>
+            <Button style={{ backgroundColor: '#36a9e1', color: 'white', padding: '12px 24px', border: 'none', borderRadius: '50px', cursor: 'pointer' }}>
               Browse packages
-            </button>
-            <button style={{ backgroundColor: 'transparent', color: '#333', padding: '12px 24px', border: '1px solid #333', borderRadius: '50px', cursor: 'pointer' }}>
+            </Button>
+            <Button style={{ backgroundColor: 'transparent', color: '#333', padding: '12px 24px', border: '1px solid #333', borderRadius: '50px', cursor: 'pointer' }}>
               Our services
-            </button>
+            </Button>
           </div>
         </div>
         
