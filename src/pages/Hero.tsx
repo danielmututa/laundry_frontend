@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div style={{ backgroundColor: 'lightblue' }}>Hero</div>
   )
 }
 
