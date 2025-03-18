@@ -42,7 +42,7 @@ const Hero = () => {
       <div className="hero-content" style={{ display: 'flex', padding: '0 20px 50px 20px' }}>
         <div className="hero-text" style={{ flex: '1', paddingRight: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
           <h1 style={{ color: '#1a2b49', fontSize: '3rem', marginBottom: '20px' }}>
-            The best laundry services in <span style={{ color: '#36a9e1' }}>Los Angeles, CA</span>
+            The best laundry services in <span style={{ color: '#36a9e1' }}>Harare</span>
           </h1>
           <p style={{ color: '#6c757d', marginBottom: '30px' }}>
             Elementum orci vulputate pharetra lorem in feugiat pulvinar dolor accumsan nisi faucibus amet interdum nec nulla elementum sediam vulputate consectur dolor.
