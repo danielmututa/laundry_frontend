@@ -24,14 +24,14 @@ const Hero = () => {
           <span style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>FreshWash</span>
         </div>
         
-        <div className="nav-links" style={{ display: 'flex', gap: '20px' }}>
+        {/* <div className="nav-links" style={{ display: 'flex', gap: '20px' }}>
           <a href="#" style={{ textDecoration: 'none', color: '#333' }}>Home</a>
           <a href="#" style={{ textDecoration: 'none', color: '#333' }}>About</a>
           <a href="#" style={{ textDecoration: 'none', color: '#333' }}>Blog</a>
           <a href="#" style={{ textDecoration: 'none', color: '#333' }}>Services</a>
           <a href="#" style={{ textDecoration: 'none', color: '#333' }}>Pages ▾</a>
           <a href="#" style={{ textDecoration: 'none', color: '#333' }}>Cart ()</a>
-        </div>
+        </div> */}
 
         <Button style={{ backgroundColor: '#36a9e1', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '50px', cursor: 'pointer' }}>
           Browse packages
