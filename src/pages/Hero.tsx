@@ -5,6 +5,7 @@ const Hero = () => {
   return (
     <div className="hero-container" style={{ backgroundColor: '#fff' }}>
       {/* Top Navigation Bar */}
+
       <ScrollReveal direction="down" delay={3}>
         <div className="top-bar" style={{ backgroundColor: '#36a9e1', color: 'white', padding: '10px 0', display: 'flex', justifyContent: 'space-between' }}>
           <div className="contact-info" style={{ display: 'flex', gap: '20px', paddingLeft: '20px' }}>
@@ -33,6 +34,11 @@ const Hero = () => {
           </Button>
         </div>
       </ScrollReveal>
+
+     
+
+    
+
 
       {/* Hero Content */}
       <div className="hero-content" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '50px 20px' }}>
