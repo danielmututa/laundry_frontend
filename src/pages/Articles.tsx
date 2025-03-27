@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ScrollReveal from '@/components/SrcollReveal/ScrollReveal';
 // Define the article type for TypeScript
 interface Article {
   id: number;
@@ -46,6 +46,7 @@ const Articles: React.FC = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
+              <ScrollReveal direction="up" delay={0.2}>
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-4xl font-bold">
           <span className="text-navy-900">Read our latest </span>
@@ -57,9 +58,11 @@ const Articles: React.FC = () => {
           Browser all articles
         </button>
       </div>
+      </ScrollReveal>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Featured article - larger size */}
+        <ScrollReveal direction="left" delay={0.4} className="col-span-1 md:col-span-1">
         <div className="col-span-1 md:col-span-1">
           <div className="h-64 md:h-80 bg-gray-200 rounded-lg mb-4 overflow-hidden">
             <img 
@@ -79,10 +82,17 @@ const Articles: React.FC = () => {
             <p className="text-gray-600 mb-4">{articles[0].excerpt}</p>
           )}
         </div>
+        </ScrollReveal>
+
 
         {/* Right side articles - smaller size */}
         <div className="col-span-1 md:col-span-1 space-y-8">
-          {articles.slice(1).map((article) => (
+          {articles.slice(1).map((article, index) => (
+            <ScrollReveal 
+            key={article.id} 
+            direction="up" 
+            delay={0.6 + index * 0.2}
+          >
             <div key={article.id} className="flex gap-4">
               <div className="w-32 h-32 bg-gray-200 rounded-lg overflow-hidden flex-shrink-0">
                 <img 
@@ -107,6 +117,7 @@ const Articles: React.FC = () => {
                 </a>
               </div>
             </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollReveal from '../components/SrcollReveal/ScrollReveal';
 
 interface StepProps {
   number: number;
@@ -61,7 +62,12 @@ const LaundryServiceSteps: React.FC = () => {
     <div className="bg-white">
       <div className="max-w-6xl mx-auto px-4 py-16">
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
+          {/* Left image area with left scroll reveal */}
+          <ScrollReveal 
+            direction="left" 
+            delay={0.2} 
+            className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8"
+          >
             <div className="relative h-full">
               <div className="rounded-lg overflow-hidden shadow-lg h-full">
                 <img 
@@ -71,9 +77,14 @@ const LaundryServiceSteps: React.FC = () => {
                 />
               </div>
             </div>
-          </div>
+          </ScrollReveal>
           
-          <div className="lg:w-1/2 lg:pl-8">
+          {/* Right content area with up scroll reveal */}
+          <ScrollReveal 
+            direction="up" 
+            delay={0.4} 
+            className="lg:w-1/2 lg:pl-8"
+          >
             <h2 className="text-4xl font-bold text-navy-900 mb-2">
               We offer you high-quality <span className="text-blue-400">laundry pickup & delivery</span> services
             </h2>
@@ -82,7 +93,7 @@ const LaundryServiceSteps: React.FC = () => {
                 <Step key={step.number} {...step} />
               ))}
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </div>

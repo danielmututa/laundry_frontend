@@ -1,10 +1,11 @@
 import React from 'react';
+import ScrollReveal from '../components/SrcollReveal/ScrollReveal';
 
 const Experiences: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row bg-slate-900 text-white">
       {/* Left content area */}
-      <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+      <ScrollReveal direction="up"  delay={2} className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-8">
           We have over 20 years of experience in 
           <span className="text-blue-400"> laundry services</span>
@@ -51,16 +52,16 @@ const Experiences: React.FC = () => {
             Browse all services
           </button>
         </div>
-      </div>
+      </ScrollReveal>
       
       {/* Right image area */}
-      <div className="w-full md:w-1/2 relative">
+      <ScrollReveal direction="right" delay={2} className="w-full md:w-1/2 relative">
         <img 
           src="/api/placeholder/600/800" 
           alt="Mother and daughter doing laundry together" 
           className="w-full h-full object-cover"
         />
-      </div>
+      </ScrollReveal>
     </div>
   );
 };
